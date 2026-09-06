@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0e382f" />
+  <meta name="description" content="Plan Sri Lanka travel with transparent taxi prices, verified local drivers, custom itineraries, fare calculator, and practical scam-aware advice from Clear Lanka Travel. Available in English, Tamil, Chinese, French, German, and Russian." />
+  <link rel="canonical" href="https://www.clearlankatravel.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Clear Lanka Travel" />
+  <meta property="og:url" content="https://www.clearlankatravel.com/" />
+  <meta property="og:title" content="Clear Lanka Travel | Sri Lanka Travel Help, Drivers & Fair Taxi Fares" />
+  <meta property="og:description" content="Transparent taxi prices, verified local drivers, interactive fare calculator, and scam-aware advice for your Sri Lanka journey." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clear Lanka Travel | Transparent Sri Lanka Travel Help" />
+  <meta name="twitter:description" content="No hidden middlemen. Verified local chauffeurs, airport transfers, custom itineraries, and fair prices." />
+  <title>Sri Lanka Travel Help, Drivers & Fair Taxi Prices | Clear Lanka Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="supabase-config.js" defer></script>
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Clear Lanka Travel",
+    "url": "https://www.clearlankatravel.com/",
+    "description": "Sri Lanka travel planning help with transparent taxi prices, verified local guides, custom itineraries, and practical visitor safety advice.",
+    "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+    "email": "hello@clearlankatravel.com",
+    "telephone": "+94-77-000-0000",
+    "knowsAbout": ["Sri Lanka travel", "airport transfers", "private drivers", "local guides", "custom itineraries", "visitor safety", "taxi fare calculator"]
+  }
+  </script>
+</head>
+<body data-lang="en">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Main Navigation Matching Mockup -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Clear Lanka Travel home">
+        <svg class="brand-logo-svg" viewBox="0 0 54 44" width="46" height="38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Radiant Sun & Rays -->
+          <circle cx="27" cy="18" r="9" fill="#f59e0b" />
+          <path d="M27 3v3M27 30v3M15 9l2.5 2.5M36.5 24.5l2.5 2.5M10 18h3M41 18h3M15 27l2.5-2.5M36.5 11.5l2.5-2.5" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" />
+          <!-- Palm Tree Trunk -->
+          <path d="M28 36c-1-5 2-10 5-14" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+          <!-- Palm Fronds -->
+          <path d="M33 22c-3-3-8-4-11-1 3-2 7-1 11 1zM33 22c0-5 2-8 5-9-1 3-2 6-5 9zM33 22c3-2 7-3 10-1-3 1-6 2-10 1zM33 22c1 3 3 6 7 7-3-1-5-3-7-7zM33 22c-3 2-6 3-10 2 3-1 6-1 10-2z" fill="#15803d"/>
+          <!-- Ocean Waves -->
+          <path d="M12 35c4-2.5 8-2.5 12 0s8 2.5 12 0" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+          <path d="M8 39c5-2.5 10-2.5 15 0s10 2.5 15 0" stroke="#047857" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-main">Clear Lanka</span>
+          <span class="brand-sub">Travel</span>
+        </div>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#calculator" class="nav-link" data-i18n="nav_calculator">Fare Calculator</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="#itineraries" class="nav-link" data-i18n="nav_itineraries">Tour Packages</a>
+        <a href="#destinations" class="nav-link" data-i18n="nav_destinations">Destinations</a>
+        <a href="#safety" class="nav-link" data-i18n="nav_safety">Stay Safe</a>
+        <a href="#login" class="nav-link" data-i18n="nav_login">Traveller Login</a>
+
+        <!-- Language Switcher matching Mockup (with full 6-language dropdown) -->
+        <div class="lang-dropdown-wrap">
+          <button type="button" class="mockup-lang-toggle" id="lang-dropdown-btn" aria-haspopup="true" aria-expanded="false" title="Select Language">
+            <span class="lang-current" id="current-lang-code">EN</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-alt">தமிழ்</span>
+            <span class="lang-more-flags">🇨🇳 🇫🇷 🇩🇪 🇷🇺</span>
+            <span class="lang-caret">▾</span>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="menu">
+            <button type="button" class="lang-opt active" data-lang-choice="en" role="menuitem">
+              <span class="flag">🇬🇧</span> <span>English (EN)</span>
+            </button>
+            <button type="button" class="lang-opt" data-lang-choice="ta" role="menuitem">
+              <span class="flag">🇱🇰</span> <span>தமிழ் (Tamil)</span>
+            </button>
+            <button type="button" class="lang-opt" data-lang-choice="zh" role="menuitem">
+              <span class="flag">🇨🇳</span> <span>中文 (Chinese)</span>
+            </button>
+            <button type="button" class="lang-opt" data-lang-choice="fr" role="menuitem">
+              <span class="flag">🇫🇷</span> <span>Français (French)</span>
+            </button>
+            <button type="button" class="lang-opt" data-lang-choice="de" role="menuitem">
+              <span class="flag">🇩🇪</span> <span>Deutsch (German)</span>
+            </button>
+            <button type="button" class="lang-opt" data-lang-choice="ru" role="menuitem">
+              <span class="flag">🇷🇺</span> <span>Русский (Russian)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Header Action Button Matching Mockup -->
+        <a class="header-book-btn" data-whatsapp href="https://wa.me/94770000000?text=Hello%20Clear%20Lanka%20Travel!%20I%20would%20like%20to%20inquire%20about%20booking%20and%20travel%20options." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.28c-.24.68-1.39 1.32-1.92 1.36-.51.04-1.17.06-3.76-.98-3.3-1.33-5.4-4.69-5.56-4.91-.16-.22-1.33-1.77-1.33-3.38 0-1.61.85-2.4 1.15-2.73.3-.33.66-.41.88-.41.22 0 .44 0 .63.01.21.01.48-.08.75.57.28.68.96 2.34 1.04 2.51.08.17.14.37.03.59-.11.22-.17.36-.33.55-.17.19-.35.43-.5.58-.17.17-.35.35-.15.7.2.35.89 1.47 1.91 2.38 1.31 1.17 2.42 1.53 2.76 1.7.35.17.55.14.75-.09.2-.23.86-1 1.09-1.35.23-.35.46-.29.77-.17.31.11 1.97.93 2.31 1.1.34.17.57.25.66.39.08.14.08.83-.16 1.51z"/>
+          </svg>
+          <span data-i18n="header_book_btn">BOOK NOW / INQUIRY</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section Matching Mockup -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <!-- Left Hero Copy -->
+        <div class="hero-copy">
+          <h1 class="hero-editorial-title">
+            <span data-i18n="hero_editorial_p1">Sri Lanka travel,</span><br />
+            <em class="hero-gold-accent" data-i18n="hero_editorial_p2">made clear.</em>
+          </h1>
+
+          <!-- Horizontal Trust Metrics Row Matching Mockup -->
+          <div class="hero-trust-metrics" aria-label="Service guarantees">
+            <div class="trust-metric-item">
+              <span class="metric-num">0%</span>
+              <span class="metric-lbl" data-i18n="trust_nofees">Booking<br>Fees</span>
+            </div>
+            <div class="trust-metric-item">
+              <span class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#deb36e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </span>
+              <span class="metric-lbl" data-i18n="trust_verified">Verified<br>Chauffeurs</span>
+            </div>
+            <div class="trust-metric-item">
+              <span class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#deb36e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M12 7v10M15 9.5a2.5 2.5 0 0 0-5 0c0 4 5 2 5 6a2.5 2.5 0 0 1-5 0"></path>
+                </svg>
+              </span>
+              <span class="metric-lbl" data-i18n="trust_clearprice">Transparent<br>Pricing</span>
+            </div>
+            <div class="trust-metric-item">
+              <span class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#deb36e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                </svg>
+              </span>
+              <span class="metric-lbl" data-i18n="trust_support">24/7<br>Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Showcase with Glassmorphism Card -->
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo-img" src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1000&q=80" alt="Scenic Nine Arch Bridge train in Ella, Sri Lanka" loading="eager" />
+
+            <!-- Floating Glassmorphism Popular Route Card Matching Mockup -->
+            <div class="hero-glass-route-card">
+              <span class="glass-route-badge" data-i18n="glass_popular_badge">Popular routes</span>
+              <div class="glass-route-title">Airport (CMB) →<br>Galle / Mirissa</div>
+              <div class="glass-route-price">
+                <strong id="glass-price-val">$65 - $85</strong>
+                <span data-i18n="glass_all_inc">All inclusive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Interactive Fare Estimator Bar -->
+      <div class="floating-fare-bar-wrapper">
+        <div class="container">
+          <div class="floating-fare-bar" id="floating-fare-bar">
+            <!-- 1. Pickup Location -->
+            <div class="fare-bar-col">
+              <label for="fb-pickup" class="fb-label" data-i18n="fb_lbl_pickup">Pickup Location</label>
+              <div class="fb-select-box">
+                <svg class="fb-pin-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <select id="fb-pickup" class="fb-select" aria-label="Pickup Location">
+                  <option value="cmb-airport" selected>Airport (CMB)</option>
+                  <option value="colombo-city">Colombo City</option>
+                  <option value="negombo">Negombo</option>
+                  <option value="kandy">Kandy</option>
+                  <option value="galle">Galle</option>
+                  <option value="mirissa">Mirissa</option>
+                  <option value="ella">Ella</option>
+                  <option value="sigiriya">Sigiriya</option>
+                  <option value="jaffna">Jaffna</option>
+                </select>
+                <span class="fb-chevron">⌄</span>
+              </div>
+            </div>
+
+            <!-- 2. Drop-off Location -->
+            <div class="fare-bar-col">
+              <label for="fb-dropoff" class="fb-label" data-i18n="fb_lbl_dropoff">Drop-off Location</label>
+              <div class="fb-select-box">
+                <svg class="fb-pin-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <select id="fb-dropoff" class="fb-select" aria-label="Drop-off Location">
+                  <option value="galle" selected>Galle / Mirissa</option>
+                  <option value="cmb-airport">Airport (CMB)</option>
+                  <option value="colombo-city">Colombo City</option>
+                  <option value="kandy">Kandy</option>
+                  <option value="nuwara-eliya">Nuwara Eliya</option>
+                  <option value="ella">Ella</option>
+                  <option value="sigiriya">Sigiriya</option>
+                  <option value="yala">Yala</option>
+                  <option value="trincomalee">Trincomalee</option>
+                  <option value="arugambay">Arugam Bay</option>
+                  <option value="jaffna">Jaffna</option>
+                </select>
+                <span class="fb-chevron">⌄</span>
+              </div>
+            </div>
+
+            <!-- 3. Vehicle Selector -->
+            <div class="fare-bar-col vehicle-col">
+              <label class="fb-label" data-i18n="fb_lbl_veh">Vehicle</label>
+              <div class="fb-vehicle-group" role="radiogroup" aria-label="Vehicle type">
+                <button type="button" class="fb-veh-btn active" data-vehicle="sedan" aria-pressed="true" title="AC Sedan">
+                  <svg viewBox="0 0 24 24" width="22" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H7c-.6 0-1.1.2-1.5.6L3.2 10.1C2.5 10.5 2 11.2 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><circle cx="17" cy="17" r="2"></circle></svg>
+                  <span>Sedan</span>
+                </button>
+                <button type="button" class="fb-veh-btn" data-vehicle="suv" aria-pressed="false" title="SUV">
+                  <svg viewBox="0 0 24 24" width="22" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 17h3c.6 0 1-.4 1-1v-4c0-.6-.4-1.1-1-1.3l-2.5-.8-2-3.4c-.3-.5-.8-.8-1.4-.8H6.9c-.6 0-1.1.3-1.4.8l-2 3.4-1.5.5C1.4 11.6 1 12.2 1 12.8V16c0 .6.4 1 1 1h2"></path><circle cx="6.5" cy="17" r="2.5"></circle><circle cx="17.5" cy="17" r="2.5"></circle></svg>
+                  <span>SUV</span>
+                </button>
+                <button type="button" class="fb-veh-btn" data-vehicle="van" aria-pressed="false" title="Passenger Van">
+                  <svg viewBox="0 0 24 24" width="22" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="5" width="22" height="12" rx="2"></rect><circle cx="6.5" cy="17" r="2.5"></circle><circle cx="17.5" cy="17" r="2.5"></circle><path d="M15 5v7h7"></path></svg>
+                  <span>Van</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Currency -->
+            <div class="fare-bar-col currency-col">
+              <label for="fb-currency" class="fb-label" data-i18n="fb_lbl_curr">Currency</label>
+              <div class="fb-select-box fb-currency-box">
+                <span class="fb-curr-icon">$</span>
+                <select id="fb-currency" class="fb-select" aria-label="Select Currency">
+                  <option value="USD" selected>USD ($)</option>
+                  <option value="LKR">LKR (Rs)</option>
+                  <option value="EUR">EUR (€)</option>
+                  <option value="GBP">GBP (£)</option>
+                  <option value="AUD">AUD (A$)</option>
+                  <option value="CNY">CNY (¥)</option>
+                  <option value="RUB">RUB (₽)</option>
+                </select>
+                <span class="fb-chevron">⌄</span>
+              </div>
+            </div>
+
+            <!-- 5. Date & Time -->
+            <div class="fare-bar-col date-col">
+              <label for="fb-datetime" class="fb-label" data-i18n="fb_lbl_datetime">Date & Time</label>
+              <div class="fb-select-box">
+                <svg class="fb-cal-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <input type="text" id="fb-datetime" class="fb-input" placeholder="Date & Time" />
+                <span class="fb-chevron">⌄</span>
+              </div>
+            </div>
+
+            <!-- 6. Submit Button -->
+            <div class="fare-bar-col btn-col">
+              <button type="button" class="fb-submit-btn" id="fb-estimate-btn">
+                <span data-i18n="fb_btn_estimate">GET FARE ESTIMATE</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Popover / Notification beneath Floating Bar -->
+          <div class="fb-result-card" id="fb-result-card" hidden>
+            <div class="fb-result-content">
+              <div class="fb-result-header">
+                <div>
+                  <span class="fb-result-badge">✓ Guaranteed Fair Pricing · Highway Tolls Included</span>
+                  <h3 id="fb-res-route">Airport (CMB) → Galle / Mirissa</h3>
+                </div>
+                <button type="button" class="fb-close-result" id="fb-close-result" aria-label="Close result">×</button>
+              </div>
+              <div class="fb-result-meta">
+                <span id="fb-res-time">⏱ 2 hrs 15 mins</span>
+                <span id="fb-res-dist">🛣 155 km</span>
+                <span id="fb-res-via">⚡ via E01 Southern Expressway</span>
+                <span class="fb-res-toll">✓ Express Tolls Included</span>
+              </div>
+              <div class="fb-result-footer">
+                <div class="fb-res-price-wrap">
+                  <span class="fb-res-lbl">Estimated Fare (<span id="fb-res-curr">USD</span>):</span>
+                  <b id="fb-res-price">$65 – $85</b>
+                  <small>Private Chauffeur · AC Vehicle · Door-to-Door</small>
+                </div>
+                <a class="fb-whatsapp-book-btn" id="fb-whatsapp-book-btn" href="#" target="_blank" rel="noopener">
+                  Book via WhatsApp →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promise Strip (3-Step Visual Journey) -->
+    <section class="promise-strip">
+      <div class="container">
+        <div class="promise-header reveal">
+          <span class="kicker" data-i18n="promise_kicker">The Clear Lanka Standard</span>
+          <h2 data-i18n="promise_title">Travel should feel simple, honest & clear.</h2>
+        </div>
+        <div class="promise-cards-grid">
+          <!-- Step 1 -->
+          <article class="promise-card reveal">
+            <div class="promise-card-top">
+              <span class="promise-step-num">01</span>
+              <span class="promise-card-icon">📍</span>
+            </div>
+            <h3 data-i18n="promise_step1_title">Tell us your route</h3>
+            <p data-i18n="promise_step1_desc">Choose your airport pickup, city transfer, or flexible multi-day island adventure.</p>
+            <div class="promise-card-perk">✓ 100+ Custom Routes Across Sri Lanka</div>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="promise-card reveal">
+            <div class="promise-card-top">
+              <span class="promise-step-num">02</span>
+              <span class="promise-card-icon">💵</span>
+            </div>
+            <h3 data-i18n="promise_step2_title">Get fair pricing</h3>
+            <p data-i18n="promise_step2_desc">Guaranteed transparent pricing with expressway tolls, fuel, and air-conditioning included.</p>
+            <div class="promise-card-perk">✓ 0% Hidden Fees · Expressway Tolls Included</div>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="promise-card reveal">
+            <div class="promise-card-top">
+              <span class="promise-step-num">03</span>
+              <span class="promise-card-icon">🤝</span>
+            </div>
+            <h3 data-i18n="promise_step3_title">Book with peace of mind</h3>
+            <p data-i18n="promise_step3_desc">Chat directly with your verified chauffeur on WhatsApp with 24/7 team support throughout.</p>
+            <div class="promise-card-perk">✓ 24/7 WhatsApp Support · Free Cancellation</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Fare & Route Calculator Section -->
+    <section class="section calculator-section" id="calculator">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker light" data-i18n="calc_kicker">Fair-Price Route Estimator</span>
+            <h2 data-i18n="calc_heading">Instant Sri Lanka<br><em>Taxi & Transfer Calculator.</em></h2>
+          </div>
+          <p data-i18n="calc_lead">
+            Avoid airport touts and inflated roadside quotes. Select your pickup point, destination, and vehicle to see the honest market price with all expressway tolls included.
+          </p>
+        </div>
+
+        <div class="calculator-card reveal">
+          <div class="calc-grid">
+            <!-- Left Side: Selection Inputs -->
+            <div class="calc-controls">
+              <!-- Currency Switcher -->
+              <div class="currency-selector-row">
+                <label for="currency-select" data-i18n="calc_curr_label">Preferred Currency:</label>
+                <div class="currency-pills" id="currency-pills">
+                  <button type="button" class="currency-pill active" data-currency="USD">USD ($)</button>
+                  <button type="button" class="currency-pill" data-currency="EUR">EUR (€)</button>
+                  <button type="button" class="currency-pill" data-currency="GBP">GBP (£)</button>
+                  <button type="button" class="currency-pill" data-currency="AUD">AUD ($)</button>
+                  <button type="button" class="currency-pill" data-currency="CNY">CNY (¥)</button>
+                  <button type="button" class="currency-pill" data-currency="RUB">RUB (₽)</button>
+                  <button type="button" class="currency-pill" data-currency="LKR">LKR (Rs)</button>
+                </div>
+              </div>
+
+              <!-- Pickup & Dropoff -->
+              <div class="route-select-grid">
+                <div class="field-group">
+                  <label for="calc-pickup">
+                    <span class="field-icon">📍</span> <span data-i18n="calc_pickup_label">Pickup Location:</span>
+                  </label>
+                  <select id="calc-pickup" class="calc-select">
+                    <option value="cmb-airport" selected>Colombo Airport (BIA / CMB)</option>
+                    <option value="colombo-city">Colombo City Center / Fort</option>
+                    <option value="negombo">Negombo Beach</option>
+                    <option value="kandy">Kandy Hill Capital</option>
+                    <option value="galle">Galle Fort / Unawatuna</option>
+                    <option value="mirissa">Mirissa / Weligama</option>
+                    <option value="ella">Ella / Haputale</option>
+                    <option value="sigiriya">Sigiriya / Dambulla</option>
+                    <option value="jaffna">Jaffna Town</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="calc-dropoff">
+                    <span class="field-icon">🏁</span> <span data-i18n="calc_dropoff_label">Destination:</span>
+                  </label>
+                  <select id="calc-dropoff" class="calc-select">
+                    <option value="galle" selected>Galle Fort / Unawatuna (South Coast)</option>
+                    <option value="mirissa">Mirissa / Weligama Beach</option>
+                    <option value="kandy">Kandy (Temple of Tooth)</option>
+                    <option value="nuwara-eliya">Nuwara Eliya / Tea Country</option>
+                    <option value="ella">Ella (Nine Arch Bridge)</option>
+                    <option value="sigiriya">Sigiriya Lion Rock / Dambulla</option>
+                    <option value="yala">Yala National Park / Tissa (Safari)</option>
+                    <option value="trincomalee">Trincomalee / Nilaveli Beach</option>
+                    <option value="arugambay">Arugam Bay (Surfing)</option>
+                    <option value="colombo-city">Colombo City Center</option>
+                    <option value="cmb-airport">Colombo Airport (BIA / CMB)</option>
+                    <option value="jaffna">Jaffna (Northern Peninsula)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Vehicle Class Options -->
+              <div class="vehicle-selection-wrap">
+                <span class="field-label" data-i18n="calc_vehicle_label">Select Vehicle Type:</span>
+                <div class="vehicle-grid">
+                  <label class="vehicle-card active">
+                    <input type="radio" name="vehicle-type" value="sedan" checked />
+                    <div class="vehicle-thumb-box">
+                      <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=400&q=80" alt="AC Sedan / Saloon" loading="lazy" class="vehicle-thumb-img" />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-heading-row">
+                        <strong data-i18n="veh_sedan_title">AC Sedan / Saloon</strong>
+                        <span class="vehicle-tag" data-i18n="veh_tag_popular">Most Popular</span>
+                      </div>
+                      <small data-i18n="veh_sedan_desc">1–3 Guests · 2 Large Bags</small>
+                    </div>
+                  </label>
+
+                  <label class="vehicle-card">
+                    <input type="radio" name="vehicle-type" value="van" />
+                    <div class="vehicle-thumb-box">
+                      <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=400&q=80" alt="Spacious KDH Van" loading="lazy" class="vehicle-thumb-img" />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-heading-row">
+                        <strong data-i18n="veh_van_title">Spacious KDH Van</strong>
+                        <span class="vehicle-tag" data-i18n="veh_tag_family">Family & Group</span>
+                      </div>
+                      <small data-i18n="veh_van_desc">4–7 Guests · 5–6 Bags</small>
+                    </div>
+                  </label>
+
+                  <label class="vehicle-card">
+                    <input type="radio" name="vehicle-type" value="suv" />
+                    <div class="vehicle-thumb-box">
+                      <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80" alt="Premium SUV / Hiace" loading="lazy" class="vehicle-thumb-img" />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-heading-row">
+                        <strong data-i18n="veh_suv_title">Premium SUV / Hiace</strong>
+                        <span class="vehicle-tag" data-i18n="veh_tag_comfort">Extra Comfort</span>
+                      </div>
+                      <small data-i18n="veh_suv_desc">1–4 Guests · VIP Comfort</small>
+                    </div>
+                  </label>
+
+                  <label class="vehicle-card">
+                    <input type="radio" name="vehicle-type" value="tuktuk" />
+                    <div class="vehicle-thumb-box">
+                      <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80" alt="Scenic Tuk-Tuk" loading="lazy" class="vehicle-thumb-img" />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-heading-row">
+                        <strong data-i18n="veh_tuk_title">Tuk-Tuk (Short Trips)</strong>
+                        <span class="vehicle-tag" data-i18n="veh_tag_budget">Budget Scenic</span>
+                      </div>
+                      <small data-i18n="veh_tuk_desc">1–2 Guests · Day excursions</small>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Calculation Result Box -->
+            <div class="calc-results-panel">
+              <div class="result-header">
+                <span class="verified-tag">✓ <span data-i18n="calc_res_verified">Verified Fair Rate</span></span>
+                <span class="live-update-tag" data-i18n="calc_res_status">Live Estimate</span>
+              </div>
+
+              <div class="result-route-title">
+                <h3 id="result-route-name">Colombo Airport → Galle Fort</h3>
+                <span id="result-via-route">via E01 Southern Expressway</span>
+              </div>
+
+              <div class="result-price-box">
+                <div class="price-value" id="result-price-range">$65 – $85</div>
+                <div class="price-currency-sub" id="result-currency-sub">USD · Total Vehicle Price</div>
+              </div>
+
+              <div class="result-meta-grid">
+                <div class="meta-item">
+                  <small data-i18n="calc_meta_time">Est. Travel Time</small>
+                  <strong id="result-est-time">~2 hrs 15 mins</strong>
+                </div>
+                <div class="meta-item">
+                  <small data-i18n="calc_meta_dist">Distance</small>
+                  <strong id="result-est-distance">155 km</strong>
+                </div>
+              </div>
+
+              <ul class="result-perks">
+                <li><span>✓</span> <span data-i18n="perk_tolls">Expressway & highway tolls included</span></li>
+                <li><span>✓</span> <span data-i18n="perk_airport">Flight delay tracking & airport paging</span></li>
+                <li><span>✓</span> <span data-i18n="perk_driver">English-speaking verified chauffeur</span></li>
+                <li><span>✓</span> <span data-i18n="perk_door">Door-to-door air-conditioned service</span></li>
+                <li><span>✓</span> <span data-i18n="perk_pay">Pay directly to driver with zero surprises</span></li>
+              </ul>
+
+              <div class="result-actions">
+                <a class="button button-coral button-calc-cta" id="calc-whatsapp-btn" href="https://wa.me/94770000000" target="_blank" rel="noopener">
+                  <span data-i18n="calc_btn_whatsapp">Lock this Price on WhatsApp ↗</span>
+                </a>
+                <small class="calc-guarantee-note" data-i18n="calc_guarantee_note">
+                  🔒 No advance deposit needed for airport pickups. Free cancellation up to 12 hours before arrival.
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section (Enriched with Rich Colorful Photography) -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker" data-i18n="services_kicker">How we help you</span>
+            <h2 data-i18n="services_heading">Trusted travel support<br>for every part of your trip.</h2>
+          </div>
+          <p data-i18n="services_lead">
+            From the moment you step off your flight to the unforgettable remote villages, we connect you with genuine local people and honest advice.
+          </p>
+        </div>
+        <div class="service-grid">
+          <!-- Service 1 -->
+          <article class="service-card featured reveal">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=700&q=80" alt="Private Airport Transfer chauffeur" loading="lazy" />
+              <div class="service-img-overlay"></div>
+              <div class="icon-box-badge">✈️</div>
+              <span class="card-number">01</span>
+            </div>
+            <h3 data-i18n="serv1_title">Airport Pickup & Transfers</h3>
+            <p data-i18n="serv1_desc">Start relaxed with a punctual driver holding a name board at arrivals, a guaranteed fixed price, and expressway tolls settled.</p>
+            <a href="#calculator" data-i18n="serv_book_link">Calculate transfer fare <span>→</span></a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card reveal">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Private Chauffeur Driving on Sri Lanka Coast" loading="lazy" />
+              <div class="service-img-overlay"></div>
+              <div class="icon-box-badge">🚗</div>
+              <span class="card-number">02</span>
+            </div>
+            <h3 data-i18n="serv2_title">Dedicated Chauffeurs & Cars</h3>
+            <p data-i18n="serv2_desc">Hire a reliable English-speaking driver for 3, 7, or 14 days. Vehicle fuel, insurance, and driver meals/lodging are fully covered.</p>
+            <a href="#enquire" data-i18n="serv_driver_link">Find your chauffeur <span>→</span></a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card reveal">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=700&q=80" alt="Certified Local Heritage Guide in Sri Lanka" loading="lazy" />
+              <div class="service-img-overlay"></div>
+              <div class="icon-box-badge">🧭</div>
+              <span class="card-number">03</span>
+            </div>
+            <h3 data-i18n="serv3_title">Certified Local Guides</h3>
+            <p data-i18n="serv3_desc">Discover UNESCO heritage sites, secret tea country hikes, street food walks, and wildlife safaris with licensed local experts.</p>
+            <a href="#enquire" data-i18n="serv_guide_link">Meet a local guide <span>→</span></a>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card reveal">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=700&q=80" alt="Custom Itinerary Sri Lanka scenic train" loading="lazy" />
+              <div class="service-img-overlay"></div>
+              <div class="icon-box-badge">🗺️</div>
+              <span class="card-number">04</span>
+            </div>
+            <h3 data-i18n="serv4_title">Bespoke Itinerary Planning</h3>
+            <p data-i18n="serv4_desc">A customized travel route designed around your pace, travel style, and interests—not an inflexible pre-packaged bus tour.</p>
+            <a href="#itineraries" data-i18n="serv_route_link">Explore curated tours <span>→</span></a>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="service-card reveal">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=700&q=80" alt="Authentic Sri Lankan Culinary Feast & Boutique Stay" loading="lazy" />
+              <div class="service-img-overlay"></div>
+              <div class="icon-box-badge">🏡</div>
+              <span class="card-number">05</span>
+            </div>
+            <h3 data-i18n="serv5_title">Boutique Stays & Food Gems</h3>
+            <p data-i18n="serv5_desc">Personal recommendations for authentic family homestays, coastal villas, and honest local eateries that tourists rarely find.</p>
+            <a href="#destinations" data-i18n="serv_stay_link">Browse destinations <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Tour Itineraries Section -->
+    <section class="section itineraries-section" id="itineraries">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker" data-i18n="itin_kicker">Curated Journeys</span>
+            <h2 data-i18n="itin_heading">Handcrafted Sri Lanka<br><em>Tour Itineraries.</em></h2>
+          </div>
+          <p data-i18n="itin_lead">
+            Every itinerary can be completely tailored to your schedule and preferences. Travel at your own rhythm with a private AC car and knowledgeable driver-guide.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="itinerary-tabs reveal" role="tablist" aria-label="Tour category filters">
+          <button type="button" class="tab-btn active" data-category="all" data-i18n="tab_all">All Journeys</button>
+          <button type="button" class="tab-btn" data-category="culture" data-i18n="tab_culture">Culture & Heritage</button>
+          <button type="button" class="tab-btn" data-category="hills" data-i18n="tab_hills">Tea Country & Scenic Trains</button>
+          <button type="button" class="tab-btn" data-category="wildlife" data-i18n="tab_wildlife">Beaches & Safari</button>
+        </div>
+
+        <!-- Itineraries Grid -->
+        <div class="itinerary-grid">
+          <!-- Card 1: Classic Island Odyssey -->
+          <article class="itinerary-card reveal" data-category="culture hills">
+            <div class="itinerary-image-wrap">
+              <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=800&q=80" alt="Sigiriya Rock Fortress in Sri Lanka" loading="lazy" />
+              <span class="itinerary-badge badge-popular" data-i18n="itin1_badge">Most Popular</span>
+              <span class="itinerary-duration">7 Days / 6 Nights</span>
+            </div>
+            <div class="itinerary-body">
+              <span class="itinerary-type" data-i18n="itin1_type">Comprehensive Tour</span>
+              <h3 data-i18n="itin1_title">Classic Cultural Triangle & Hill Country</h3>
+              <p class="itinerary-stops"><b>Route:</b> Sigiriya ➔ Dambulla ➔ Kandy ➔ Scenic Train ➔ Ella ➔ Galle Fort</p>
+              <ul class="itinerary-highlights">
+                <li><span>•</span> Sunrise climb of Sigiriya Lion Rock fortress</li>
+                <li><span>•</span> World-famous blue train journey from Kandy to Ella</li>
+                <li><span>•</span> Temple of the Sacred Tooth Relic in Kandy</li>
+                <li><span>•</span> Sunset walk along Galle Dutch Fort ocean ramparts</li>
+              </ul>
+              <div class="itinerary-footer">
+                <div class="itinerary-price">
+                  <small data-i18n="itin_from">Private Chauffeur & Vehicle from</small>
+                  <b>$420 <span class="price-unit">/ car</span></b>
+                </div>
+                <a class="button button-small button-coral" data-whatsapp href="https://wa.me/94770000000?text=Hello%2C%20I%20would%20like%20to%20customize%20the%207-Day%20Classic%20Cultural%20Triangle%20Tour" target="_blank" rel="noopener">
+                  <span data-i18n="itin_btn_quote">Customize ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: South Coast Beaches & Safari -->
+          <article class="itinerary-card reveal" data-category="wildlife">
+            <div class="itinerary-image-wrap">
+              <img src="images/mirissa-beach.jpg" alt="Mirissa beach and coconut palms in southern Sri Lanka" loading="lazy" />
+              <span class="itinerary-badge badge-beach" data-i18n="itin2_badge">Coastal & Safari</span>
+              <span class="itinerary-duration">5 Days / 4 Nights</span>
+            </div>
+            <div class="itinerary-body">
+              <span class="itinerary-type" data-i18n="itin2_type">Nature & Ocean</span>
+              <h3 data-i18n="itin2_title">Southern Coast, Whales & Leopard Safari</h3>
+              <p class="itinerary-stops"><b>Route:</b> Bentota ➔ Galle Dutch Fort ➔ Mirissa ➔ Yala National Park</p>
+              <ul class="itinerary-highlights">
+                <li><span>•</span> Blue whale & dolphin safari cruise in Mirissa</li>
+                <li><span>•</span> 4x4 Jeep Safari searching for wild leopards & elephants in Yala</li>
+                <li><span>•</span> Sunset cocktails at Coconut Tree Hill</li>
+                <li><span>•</span> Stilt fishermen and surf lessons in Weligama bay</li>
+              </ul>
+              <div class="itinerary-footer">
+                <div class="itinerary-price">
+                  <small data-i18n="itin_from">Private Chauffeur & Vehicle from</small>
+                  <b>$310 <span class="price-unit">/ car</span></b>
+                </div>
+                <a class="button button-small button-coral" data-whatsapp href="https://wa.me/94770000000?text=Hello%2C%20I%20would%20like%20to%20customize%20the%205-Day%20Southern%20Coast%20and%20Safari%20Tour" target="_blank" rel="noopener">
+                  <span data-i18n="itin_btn_quote">Customize ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Misty Tea Trails & High Hills -->
+          <article class="itinerary-card reveal" data-category="hills">
+            <div class="itinerary-image-wrap">
+              <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Nine Arch Bridge Ella misty green tea fields" loading="lazy" />
+              <span class="itinerary-badge badge-hills" data-i18n="itin3_badge">Scenic Train</span>
+              <span class="itinerary-duration">4 Days / 3 Nights</span>
+            </div>
+            <div class="itinerary-body">
+              <span class="itinerary-type" data-i18n="itin3_type">Mountain Escapes</span>
+              <h3 data-i18n="itin3_title">Misty Tea Trails & Highland Train</h3>
+              <p class="itinerary-stops"><b>Route:</b> Colombo ➔ Pinnawala ➔ Nuwara Eliya ➔ Ella ➔ Nine Arch Bridge</p>
+              <ul class="itinerary-highlights">
+                <li><span>•</span> Scenic hike to Little Adam's Peak & Nine Arch Bridge</li>
+                <li><span>•</span> Authentic Ceylon tea factory tour & fresh leaf tasting</li>
+                <li><span>•</span> Ramboda waterfall & colonial Nuwara Eliya architecture</li>
+                <li><span>•</span> World's End hike at Horton Plains National Park</li>
+              </ul>
+              <div class="itinerary-footer">
+                <div class="itinerary-price">
+                  <small data-i18n="itin_from">Private Chauffeur & Vehicle from</small>
+                  <b>$260 <span class="price-unit">/ car</span></b>
+                </div>
+                <a class="button button-small button-coral" data-whatsapp href="https://wa.me/94770000000?text=Hello%2C%20I%20would%20like%20to%20customize%20the%204-Day%20Tea%20Trails%20Tour" target="_blank" rel="noopener">
+                  <span data-i18n="itin_btn_quote">Customize ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Northern Heritage & Jaffna Discovery -->
+          <article class="itinerary-card reveal" data-category="culture">
+            <div class="itinerary-image-wrap">
+              <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Historic coastal architecture and heritage in Sri Lanka" loading="lazy" />
+              <span class="itinerary-badge badge-culture" data-i18n="itin4_badge">Heritage & Island</span>
+              <span class="itinerary-duration">4 Days / 3 Nights</span>
+            </div>
+            <div class="itinerary-body">
+              <span class="itinerary-type" data-i18n="itin4_type">Cultural Immersion</span>
+              <h3 data-i18n="itin4_title">Jaffna & Northern Peninsula Heritage</h3>
+              <p class="itinerary-stops"><b>Route:</b> Anuradhapura ➔ Jaffna Fort ➔ Nallur Kandaswamy ➔ Delft Island</p>
+              <ul class="itinerary-highlights">
+                <li><span>•</span> Explore the sacred temples and golden gopuram of Nallur</li>
+                <li><span>•</span> Boat excursion to wild horses and baobab trees of Delft Island</li>
+                <li><span>•</span> Authentic Jaffna crab curry & northern street cuisine</li>
+                <li><span>•</span> Healing waters of Keerimalai natural sea springs</li>
+              </ul>
+              <div class="itinerary-footer">
+                <div class="itinerary-price">
+                  <small data-i18n="itin_from">Private Chauffeur & Vehicle from</small>
+                  <b>$295 <span class="price-unit">/ car</span></b>
+                </div>
+                <a class="button button-small button-coral" data-whatsapp href="https://wa.me/94770000000?text=Hello%2C%20I%20would%20like%20to%20customize%20the%20Jaffna%20Tour" target="_blank" rel="noopener">
+                  <span data-i18n="itin_btn_quote">Customize ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Explorer Section -->
+    <section class="section destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker" data-i18n="dest_kicker">Explore Sri Lanka</span>
+            <h2 data-i18n="dest_heading">Iconic Destinations<br><em>& Local Secrets.</em></h2>
+          </div>
+          <p data-i18n="dest_lead">
+            Whether you dream of misty tea ridges, ancient palace fortresses, or turquoise surf breaks, here is practical information to plan your stops.
+          </p>
+        </div>
+
+        <div class="destination-grid">
+          <!-- Dest 1 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80" alt="Sigiriya Lion Rock Fortress" loading="lazy" />
+              <span class="dest-region">Cultural Triangle</span>
+            </div>
+            <div class="dest-info">
+              <h3>Sigiriya Rock Fortress</h3>
+              <p class="dest-desc">A dramatic 200-meter sheer granite rock crowned by the ruins of King Kashyapa's ancient sky palace.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>3.5 hrs</b> from Airport</span>
+                <span>📅 <b>Best:</b> Dec – Apr</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="sigiriya">Check taxi fare to Sigiriya →</a>
+            </div>
+          </article>
+
+          <!-- Dest 2 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=600&q=80" alt="Nine Arch Bridge in Ella" loading="lazy" />
+              <span class="dest-region">Central Highlands</span>
+            </div>
+            <div class="dest-info">
+              <h3>Ella & Nine Arch Bridge</h3>
+              <p class="dest-desc">A bohemian mountain village surrounded by cloud forests, roaring waterfalls, tea plantations, and scenic hiking trails.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>5.5 hrs</b> from Airport</span>
+                <span>📅 <b>Best:</b> Year-round</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="ella">Check taxi fare to Ella →</a>
+            </div>
+          </article>
+
+          <!-- Dest 3 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=600&q=80" alt="Galle Dutch Fort and coastal lighthouse" loading="lazy" />
+              <span class="dest-region">South Coast</span>
+            </div>
+            <div class="dest-info">
+              <h3>Galle Dutch Fort</h3>
+              <p class="dest-desc">A living 17th-century UNESCO fortress packed with colonial villas, artisanal gelato shops, ocean ramparts, and lighthouses.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>2 hrs 15m</b> via Expressway</span>
+                <span>📅 <b>Best:</b> Nov – Apr</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="galle">Check taxi fare to Galle →</a>
+            </div>
+          </article>
+
+          <!-- Dest 4 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=600&q=80" alt="Wild leopard in Sri Lanka safari" loading="lazy" />
+              <span class="dest-region">Wildlife Wilderness</span>
+            </div>
+            <div class="dest-info">
+              <h3>Yala National Park</h3>
+              <p class="dest-desc">Home to the world's highest density of leopards, wild herds of Asian elephants, sloth bears, and saltwater crocodiles.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>4.5 hrs</b> via Expressway</span>
+                <span>📅 <b>Best:</b> Feb – Jul</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="yala">Check taxi fare to Yala →</a>
+            </div>
+          </article>
+
+          <!-- Dest 5 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="images/mirissa-coconut-hill.jpg" alt="Mirissa and Weligama beach with iconic Coconut Tree Hill in Sri Lanka" loading="lazy" />
+              <span class="dest-region">Southern Coast</span>
+            </div>
+            <div class="dest-info">
+              <h3>Mirissa & Weligama</h3>
+              <p class="dest-desc">Crescent palm-fringed bays famous for blue whale watching expeditions, learner-friendly surf breaks, and fresh seafood shacks.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>2.5 hrs</b> via Expressway</span>
+                <span>📅 <b>Best:</b> Nov – Apr</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="mirissa">Check taxi fare to Mirissa →</a>
+            </div>
+          </article>
+
+          <!-- Dest 6 -->
+          <article class="destination-card reveal">
+            <div class="dest-img-wrap">
+              <img src="images/kandy-tooth-temple.jpg" alt="Kandy Temple of the Sacred Tooth Relic (Sri Dalada Maligawa)" loading="lazy" />
+              <span class="dest-region">Cultural Capital</span>
+            </div>
+            <div class="dest-info">
+              <h3>Kandy & Sacred Relics</h3>
+              <p class="dest-desc">Sri Lanka's historic royal capital situated around a serene lake, housing the venerated Temple of the Sacred Tooth Relic.</p>
+              <div class="dest-meta">
+                <span>⏱ <b>3 hrs</b> via Central Road</span>
+                <span>📅 <b>Best:</b> Year-round</span>
+              </div>
+              <a href="#calculator" class="dest-link" data-dest-preset="kandy">Check taxi fare to Kandy →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Safety & Scam Avoidance Hub Section (Enriched with Visual Badges) -->
+    <section class="section safety-hub-section" id="safety">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker" data-i18n="safety_kicker">Honest Traveler Advice</span>
+            <h2 data-i18n="safety_heading">Travel Smart & Avoid<br><em>The Common Tourist Traps.</em></h2>
+          </div>
+          <p data-i18n="safety_lead">
+            Sri Lanka is remarkably hospitable, safe, and warm. However, like any world-class destination, commission touts exist. Here are the exact insider tips to protect your money.
+          </p>
+        </div>
+
+        <div class="safety-grid">
+          <!-- Accordion of Scams & Fixes -->
+          <div class="safety-accordion reveal">
+            <!-- Item 1 -->
+            <details class="accordion-item" open>
+              <summary>
+                <span class="acc-badge danger">Common Tactic</span>
+                <strong data-i18n="scam1_title">1. "Your Hotel is Closed or Burned Down"</strong>
+                <span class="acc-chevron">▾</span>
+              </summary>
+              <div class="acc-content">
+                <p data-i18n="scam1_desc">A tuk-tuk or unregistered driver may claim that your pre-booked hotel is closed, under renovation, or overbooked, offering to take you to their "friend's nice guest house" instead (where they earn up to 40% commission).</p>
+                <div class="acc-solution">
+                  <b>💡 <span data-i18n="scam1_sol_title">How to handle it:</span></b>
+                  <p data-i18n="scam1_sol_desc">Never believe third parties. Call your hotel directly via the phone number on your booking confirmation. Insist on being taken to the exact entrance.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Item 2 -->
+            <details class="accordion-item">
+              <summary>
+                <span class="acc-badge warning">Commission Detour</span>
+                <strong data-i18n="scam2_title">2. Herbal Spice Gardens & Gem Museum Stops</strong>
+                <span class="acc-chevron">▾</span>
+              </summary>
+              <div class="acc-content">
+                <p data-i18n="scam2_desc">During inter-city road trips, drivers may suggest a "quick free 10-minute tea or spice garden tour". These shops use intense psychological sales techniques to sell herbal oils, spices, or gems at 10x market prices.</p>
+                <div class="acc-solution">
+                  <b>💡 <span data-i18n="scam2_sol_title">How to handle it:</span></b>
+                  <p data-i18n="scam2_sol_desc">Politely tell your driver: <em>"No shopping stops please, we prefer to go directly to our destination."</em> When you book through Clear Lanka Travel, our chauffeurs sign a strict no-commission policy.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Item 3 -->
+            <details class="accordion-item">
+              <summary>
+                <span class="acc-badge info">Fare Clarity</span>
+                <strong data-i18n="scam3_title">3. Tuk-Tuk Meters vs. Fixed Tourist Rates</strong>
+                <span class="acc-chevron">▾</span>
+              </summary>
+              <div class="acc-content">
+                <p data-i18n="scam3_desc">In Colombo, tuk-tuks have meters ("Meter Taxi" on roof). Insist they turn the meter on. In beach towns (Mirissa, Ella, Galle), meters do not exist; always negotiate and agree upon the total price <em>before</em> getting into the vehicle.</p>
+                <div class="acc-solution">
+                  <b>💡 <span data-i18n="scam3_sol_title">Benchmark Rule:</span></b>
+                  <p data-i18n="scam3_sol_desc">Short 2–3 km tuk-tuk rides are typically Rs. 400–700 ($1.50–$2.50). Or use ride-hailing apps like PickMe or Uber in Colombo and Kandy for fixed rates.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Item 4 -->
+            <details class="accordion-item">
+              <summary>
+                <span class="acc-badge tip">Train Advice</span>
+                <strong data-i18n="scam4_title">4. Kandy to Ella Scenic Train Ticket Truth</strong>
+                <span class="acc-chevron">▾</span>
+              </summary>
+              <div class="acc-content">
+                <p data-i18n="scam4_desc">Reserved 1st & 2nd class train seats open strictly 30 days in advance and sell out within minutes to bulk resellers. Touts outside Kandy or Colombo Fort stations will try to sell $3 tickets for $35.</p>
+                <div class="acc-solution">
+                  <b>💡 <span data-i18n="scam4_sol_title">Pro Traveler Tip:</span></b>
+                  <p data-i18n="scam4_sol_desc">Unreserved 2nd & 3rd class tickets are sold on the morning of travel at official station counters for less than $2! Alternatively, book your chauffeur to drive your luggage ahead while you enjoy the train.</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Item 5 -->
+            <details class="accordion-item">
+              <summary>
+                <span class="acc-badge tip">Cultural Respect</span>
+                <strong data-i18n="scam5_title">5. Sacred Temple Etiquette & Dress Code</strong>
+                <span class="acc-chevron">▾</span>
+              </summary>
+              <div class="acc-content">
+                <p data-i18n="scam5_desc">When visiting temples (Kandy Tooth Relic, Dambulla, Nallur Kovil): shoulders and knees must be covered (bring a sarong or light scarf). Shoes and hats must be removed before entering holy precincts.</p>
+                <div class="acc-solution">
+                  <b>💡 <span data-i18n="scam5_sol_title">Crucial Legal Rule:</span></b>
+                  <p data-i18n="scam5_sol_desc">Never take selfies with your back turned directly to a Buddha statue, and never display Buddha tattoos openly, as this is considered deeply disrespectful under Sri Lankan law.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <!-- Emergency Hotlines & Visual Guide Cards -->
+          <div class="safety-sidebar reveal">
+            <!-- Visual Photo Card 1: Colorful Tuk Tuk Guide -->
+            <div class="safety-photo-card">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=700&q=80" alt="Colorful Sri Lankan Tuk Tuk" loading="lazy" />
+              <div class="safety-photo-badge">🚕 Tuk-Tuk Fare Guide</div>
+              <div class="safety-photo-content">
+                <strong>Fair Tuk-Tuk Rides</strong>
+                <small>Short trips: 400–700 LKR ($1.50–$2.50). Always agree on price first.</small>
+              </div>
+            </div>
+
+            <!-- Visual Photo Card 2: Scenic Train Guide -->
+            <div class="safety-photo-card">
+              <img src="https://images.unsplash.com/photo-1588258524675-c6191ecfe9db?auto=format&fit=crop&w=700&q=80" alt="Scenic blue train in Sri Lanka highlands" loading="lazy" />
+              <div class="safety-photo-badge">🚂 Train Advice</div>
+              <div class="safety-photo-content">
+                <strong>Kandy to Ella Train Tickets</strong>
+                <small>Never pay $35 to touts. Unreserved morning counter tickets are under $2!</small>
+              </div>
+            </div>
+
+            <!-- Visual Photo Card 3: Temple Etiquette Guide -->
+            <div class="safety-photo-card">
+              <img src="images/kandy-lake.jpg" alt="Temple of the Sacred Tooth Relic lakeside in Kandy" loading="lazy" />
+              <div class="safety-photo-badge">🛕 Temple Etiquette</div>
+              <div class="safety-photo-content">
+                <strong>Respecting Sacred Sites</strong>
+                <small>Cover shoulders and knees. Never take selfies with your back to Buddha statues.</small>
+              </div>
+            </div>
+
+            <!-- Emergency Directory Card -->
+            <div class="emergency-directory-card">
+              <h3 data-i18n="emer_title">Official 24/7 Helpline Directory</h3>
+              <p data-i18n="emer_sub">Save these toll-free numbers into your phone upon landing in Sri Lanka:</p>
+
+              <div class="emergency-contact-item">
+                <span class="em-icon">👮</span>
+                <div>
+                  <small data-i18n="emer_police_label">Sri Lanka Tourist Police</small>
+                  <a href="tel:1912"><b>1912</b> (Toll-Free Islandwide)</a>
+                  <p data-i18n="emer_police_desc">Specialized police unit assisting tourists with disputes, scams, or lost items.</p>
+                </div>
+              </div>
+
+              <div class="emergency-contact-item">
+                <span class="em-icon">🚑</span>
+                <div>
+                  <small data-i18n="emer_med_label">1990 Suwa Seriya Ambulance</small>
+                  <a href="tel:1990"><b>1990</b> (Free Medical Emergency)</a>
+                  <p data-i18n="emer_med_desc">Fast, world-class medical emergency response with trained paramedics nationwide.</p>
+                </div>
+              </div>
+
+              <div class="emergency-contact-item">
+                <span class="em-icon">📞</span>
+                <div>
+                  <small data-i18n="emer_support_label">Clear Lanka WhatsApp Emergency</small>
+                  <a data-whatsapp href="https://wa.me/94770000000" target="_blank" rel="noopener"><b data-phone>+94 77 000 0000</b></a>
+                  <p data-i18n="emer_support_desc">Message us anytime if you feel unsure about a quote or need local advice.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Verification Promise -->
+            <div class="bargain-box">
+              <h4 data-i18n="bargain_title">Free Price-Check Service</h4>
+              <p data-i18n="bargain_desc">
+                Got a taxi or hotel quote from someone on the street? Send a photo of the quote to our WhatsApp. We will honestly tell you if it's fair or overpriced—completely free!
+              </p>
+              <a class="text-link light" data-whatsapp href="https://wa.me/94770000000?text=Hello%20Clear%20Lanka%2C%20can%20you%20check%20if%20this%20travel%20quote%20is%20fair%3F" target="_blank" rel="noopener">
+                <span data-i18n="bargain_link">Check a quote on WhatsApp ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Partners Section (Enhanced with High Quality Photos) -->
+    <section class="section partners" id="partners">
+      <div class="container">
+        <div class="partner-head reveal">
+          <div>
+            <span class="kicker" data-i18n="part_kicker">Personally Checked</span>
+            <h2 data-i18n="part_heading">Local Chauffeurs & Guides<br><em>We Proudly Recommend.</em></h2>
+          </div>
+          <p data-i18n="part_lead">
+            Every partner is personally met, identity-checked, vehicle-inspected, and vetted for fair pricing and English fluency.
+          </p>
+        </div>
+
+        <div class="partner-grid">
+          <!-- Partner 1 -->
+          <article class="partner-card reveal">
+            <div class="partner-image photo-partner">
+              <img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80" alt="Lakmal Fleet Chauffeurs Sri Lanka" loading="lazy" />
+              <span class="verified-label" data-i18n="part_vlabel">Verified Driver Pick</span>
+              <span class="rating">★ 4.9 (120+ trips)</span>
+            </div>
+            <div class="partner-info">
+              <small data-i18n="part1_role">Senior Chauffeur-Guide · Islandwide</small>
+              <h3>Lakmal & Co. Private Fleet</h3>
+              <p data-i18n="part1_desc">Punctual English-speaking chauffeurs with immaculate AC sedans and KDH vans. No commission stops, guaranteed.</p>
+              <div>
+                <span>✓ Identity & background checked</span>
+                <span>✓ Air-conditioned vehicle inspected</span>
+                <span>✓ Guaranteed fixed day-rates</span>
+              </div>
+              <a data-whatsapp href="https://wa.me/94770000000?text=Hi%2C%20I%20am%20interested%20in%20booking%20Lakmal%20fleet%20driver" target="_blank" rel="noopener">
+                <span data-i18n="part_avail_btn">Check Lakmal's Availability →</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Partner 2 -->
+          <article class="partner-card reveal">
+            <div class="partner-image photo-partner">
+              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="Local Guide Nimal hiking in Ella Sri Lanka" loading="lazy" />
+              <span class="verified-label" data-i18n="part_vlabel">Verified Guide Pick</span>
+              <span class="rating">★ 4.8 (85+ walks)</span>
+            </div>
+            <div class="partner-info">
+              <small data-i18n="part2_role">Licensed Naturalist · Central Highlands</small>
+              <h3>Hill Country Walks with Nimal</h3>
+              <p data-i18n="part2_desc">Lifelong Ella local guiding immersive tea plantation hikes, secluded waterfalls, and railway heritage stories.</p>
+              <div>
+                <span>✓ SLTDA licensed local guide</span>
+                <span>✓ Highly rated by international guests</span>
+                <span>✓ Family and child friendly</span>
+              </div>
+              <a data-whatsapp href="https://wa.me/94770000000?text=Hi%2C%20I%20am%20interested%20in%20hiking%20with%20Nimal%20in%20Ella" target="_blank" rel="noopener">
+                <span data-i18n="part_avail_btn">Check Nimal's Availability →</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Partner 3 -->
+          <article class="partner-card reveal">
+            <div class="partner-image photo-partner">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Wildlife and Marine Specialist Dinesh in Mirissa and Yala" loading="lazy" />
+              <span class="verified-label" data-i18n="part_vlabel">Verified Specialist Pick</span>
+              <span class="rating">★ 4.9 (110+ tours)</span>
+            </div>
+            <div class="partner-info">
+              <small data-i18n="part3_role">Marine & Safari Specialist · Mirissa & Yala</small>
+              <h3>South Coast Expeditions with Dinesh</h3>
+              <p data-i18n="part3_desc">Licensed naturalist specializing in ethical blue whale watching cruises from Mirissa harbor and leopard 4x4 safaris in Yala National Park.</p>
+              <div>
+                <span>✓ Licensed marine wildlife guide</span>
+                <span>✓ Private 4x4 open-top safari jeeps</span>
+                <span>✓ Multi-language guest assistance</span>
+              </div>
+              <a data-whatsapp href="https://wa.me/94770000000?text=Hi%2C%20I%20am%20interested%20in%20booking%20Dinesh%20for%20Mirissa%20or%20Yala" target="_blank" rel="noopener">
+                <span data-i18n="part_avail_btn">Check Dinesh's Availability →</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Clear Lanka Trust Section (Enhanced with Visual Card) -->
+    <section class="section trust-section">
+      <div class="container trust-grid">
+        <div class="trust-copy reveal">
+          <span class="kicker light" data-i18n="trust_kicker">Why Clear Lanka</span>
+          <h2 data-i18n="trust_heading">We’re on your side,<br><em>never in the middle.</em></h2>
+          <p data-i18n="trust_lead">
+            We built Clear Lanka Travel after witnessing countless visitors waste hours and precious holiday budgets on inflated taxi commissions and tourist traps.
+          </p>
+
+          <!-- Scenic Trust Photo Card -->
+          <div class="trust-photo-card">
+            <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=700&q=80" alt="Happy travellers in Sri Lanka" loading="lazy" />
+            <div class="trust-photo-overlay">
+              <span>🇱🇰 100% Locally Managed with Pride</span>
+            </div>
+          </div>
+
+          <a class="button button-coral" href="#calculator" data-i18n="trust_cta">Check Your Route Fare <span>→</span></a>
+        </div>
+
+        <div class="trust-points reveal">
+          <article>
+            <span>01</span>
+            <div>
+              <h3 data-i18n="t1_title">100% Transparent Rates</h3>
+              <p data-i18n="t1_desc">Every quote clearly states whether highway tolls, fuel, and waiting charges are included. No unexpected surcharge at arrival.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3 data-i18n="t2_title">Identity-Verified Locals</h3>
+              <p data-i18n="t2_desc">We check National ID, driver licenses, passenger insurance, vehicle safety, and traveler reviews before connecting you.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3 data-i18n="t3_title">Zero Sales Pressure</h3>
+              <p data-i18n="t3_desc">Compare prices freely. If our quote isn't the best for your budget, we encourage you to shop around with our tips in hand.</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <h3 data-i18n="t4_title">Real-Time WhatsApp Support</h3>
+              <p data-i18n="t4_desc">Have a question while exploring? Our local team is just a WhatsApp message away to help clarify train times or road conditions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Enriched 4-Card International Showcase) -->
+    <section class="section testimonials" id="reviews">
+      <div class="container reveal">
+        <div class="section-header" style="text-align: center; margin-bottom: 28px;">
+          <span class="kicker" data-i18n="testi_kicker">Real International Travellers</span>
+          <h2 data-i18n="testi_heading">Loved by Explorers Worldwide</h2>
+          <p class="lead" data-i18n="testi_lead">Over 1,200+ guests from Europe, Asia, and the Americas have trusted our honest, transparent local drivers.</p>
+        </div>
+
+        <div class="international-reviews-grid">
+          <!-- Review 1: Germany -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80" alt="Anna & Marc from Germany" loading="lazy" />
+                </div>
+                <div class="review-author-meta">
+                  <strong>Anna &amp; Marc</strong>
+                  <small>🇩🇪 Frankfurt, Germany</small>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <p class="review-quote" data-i18n="testi1_text">“Our driver was exactly where promised at Colombo Airport holding our name board. The price matched the quote to the exact rupee, and we felt looked after without ever being pressured into tourist shops. Best decision for Sri Lanka!”</p>
+            </div>
+            <span class="review-tag">Airport ➔ Kandy ➔ Ella (Sedan)</span>
+          </article>
+
+          <!-- Review 2: France -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="Jean-Luc & Sophie from France" loading="lazy" />
+                </div>
+                <div class="review-author-meta">
+                  <strong>Jean-Luc &amp; Sophie</strong>
+                  <small>🇫🇷 Lyon, France</small>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <p class="review-quote" data-i18n="testi2_text">“Communication en français via WhatsApp très claire et rapide ! Chauffeur ponctuel, van climatisé d'une propreté exemplaire et conseils précieux pour visiter Sigiriya tôt le matin sans foule.”</p>
+            </div>
+            <span class="review-tag">Negombo ➔ Sigiriya ➔ Mirissa (Van)</span>
+          </article>
+
+          <!-- Review 3: China -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=160&q=80" alt="Wei & Lin from China" loading="lazy" />
+                </div>
+                <div class="review-author-meta">
+                  <strong>Wei &amp; Lin (张伟 &amp; 林静)</strong>
+                  <small>🇨🇳 Shanghai, China</small>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <p class="review-quote" data-i18n="testi3_text">“价格透明公道，没有任何绕路或者强制购物店！司机师傅非常细心，帮我们买到了康提往返埃勒的高山茶园火车票，中文沟通也特别顺畅，强烈推荐。”</p>
+            </div>
+            <span class="review-tag">Kandy ➔ Nuwara Eliya ➔ Galle (SUV)</span>
+          </article>
+
+          <!-- Review 4: Russia -->
+          <article class="review-card">
+            <div>
+              <div class="review-header">
+                <div class="review-avatar">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80" alt="Dmitry & Elena from Russia" loading="lazy" />
+                </div>
+                <div class="review-author-meta">
+                  <strong>Dmitry &amp; Elena</strong>
+                  <small>🇷🇺 Moscow, Russia</small>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <p class="review-quote" data-i18n="testi4_text">“Превосходный сервис! Встретили в аэропорту Коломбо точно вовремя, машина чистая с отличным кондиционером. Фиксированная цена без скрытых доплат. Очень дружелюбный водитель.”</p>
+            </div>
+            <span class="review-tag">Airport ➔ Weligama ➔ Yala Safari (Van)</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Traveller & Operator Login Hub Section (Restored Old Login Experience) -->
+    <section class="section login-section" id="login">
+      <div class="container login-grid reveal">
+        <!-- Left Side: Visual Copy with Scenic Travel Photo -->
+        <div class="auth-copy-card">
+          <div>
+            <span class="kicker gold" data-i18n="login_kicker">Traveller &amp; Operator Access</span>
+            <h2 data-i18n="login_card_title">Plan clearly.<br><em>Travel freely.</em></h2>
+            <p data-i18n="login_card_desc">
+              Save useful services, keep enquiry updates together, and return to your Sri Lanka plans whenever you need them.
+            </p>
+
+            <div class="auth-feature-list">
+              <div><span>✓</span> <b>Secure traveller email account &amp; persistent session</b></div>
+              <div><span>✓</span> <b>Direct enquiry synchronization &amp; route archives</b></div>
+              <div><span>✓</span> <b>Personal trip notes, homestays &amp; chauffeur records</b></div>
+              <div><span>✓</span> <b>Integrated gateway to Owner Management Studio</b></div>
+            </div>
+          </div>
+
+          <!-- Scenic photo card inside auth copy -->
+          <div class="auth-scenic-photo">
+            <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=600&q=80" alt="Scenic Sri Lanka Highland Journey" loading="lazy" />
+            <div class="auth-photo-caption">
+              <span>🇱🇰 Your private trip portal, always ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Interactive Login Form & Account Switcher -->
+        <div class="auth-hub-card">
+          <!-- Auth Role Tabs -->
+          <div class="auth-tabs" role="tablist">
+            <button type="button" class="auth-tab-btn active" id="tab-btn-traveller" data-target="pane-traveller">
+              <span data-i18n="login_tab_traveller">🎒 Traveller Account</span>
+            </button>
+            <button type="button" class="auth-tab-btn" id="tab-btn-admin" data-target="pane-admin">
+              <span data-i18n="login_tab_admin">🛡️ Owner Studio</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Traveller Account Login -->
+          <div class="auth-tab-pane active" id="pane-traveller">
+            <form id="homepage-traveller-login" class="auth-form-body">
+              <div class="auth-form-head">
+                <span class="auth-lock-icon">◎</span>
+                <div>
+                  <h3 data-i18n="login_heading">Sign In to Your Account</h3>
+                  <small>Traveller account session powered by Supabase Auth</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="home-traveller-email">Email Address</label>
+                <input type="email" id="home-traveller-email" name="email" placeholder="e.g. maya@example.com" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="home-traveller-password">Password</label>
+                <input type="password" id="home-traveller-password" name="password" placeholder="••••••••" required autocomplete="current-password" minlength="8" />
+              </div>
+
+              <div class="auth-form-row">
+                <label class="checkbox-label">
+                  <input type="checkbox" checked /> Remember this device
+                </label>
+                <a href="customer.html" class="forgot-link">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="button button-coral full-width" data-i18n="login_btn_signin">
+                Sign in securely →
+              </button>
+
+              <p class="auth-feedback" id="home-traveller-status" role="status" aria-live="polite"></p>
+
+              <div class="auth-portal-links">
+                <a href="customer.html" class="portal-link" data-i18n="login_open_full">
+                  Open Standalone Traveller Portal (customer.html) ↗
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <!-- Tab 2: Owner Studio Gateway -->
+          <div class="auth-tab-pane" id="pane-admin" hidden>
+            <form id="homepage-admin-login" class="auth-form-body">
+              <div class="auth-form-head">
+                <span class="auth-lock-icon admin">🛡️</span>
+                <div>
+                  <h3>Owner &amp; Operator Studio</h3>
+                  <small>Manage rates, chauffeur verification, guides &amp; CMS</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="home-admin-email">Admin Email</label>
+                <input type="email" id="home-admin-email" autocomplete="email" placeholder="owner@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="home-admin-password">Password</label>
+                <input type="password" id="home-admin-password" autocomplete="current-password" placeholder="Your password" required />
+              </div>
+
+              <button type="submit" class="button button-dark full-width" data-i18n="login_open_admin">
+                Open Owner CMS Studio (admin.html) ↗
+              </button>
+              <p class="auth-feedback" id="home-admin-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual Booking & Enquiry Hub Section -->
+    <section class="section enquire" id="enquire">
+      <div class="container enquire-grid">
+        <div class="enquire-copy reveal">
+          <span class="kicker" data-i18n="enq_kicker">Let’s Make It Simple</span>
+          <h2 data-i18n="enq_heading">Tell us what you need.<br><em>We’ll make it clear.</em></h2>
+          <p data-i18n="enq_lead">
+            No perfect itinerary needed yet. Share what you know and our local travel helpers will reply with honest recommendations and transparent costs.
+          </p>
+
+          <div class="contact-options">
+            <a data-whatsapp href="https://wa.me/94770000000" target="_blank" rel="noopener">
+              <span>💬</span>
+              <div>
+                <small data-i18n="enq_fastest">Fastest Response (15 Mins)</small>
+                <b data-phone>+94 77 000 0000</b>
+              </div>
+            </a>
+            <a data-email href="mailto:hello@clearlankatravel.com">
+              <span>✉️</span>
+              <div>
+                <small data-i18n="enq_email">Email Enquiry</small>
+                <b data-email-text>hello@clearlankatravel.com</b>
+              </div>
+            </a>
+          </div>
+
+          <small class="reply-time">
+            <i></i> <span data-i18n="enq_hours">Typical WhatsApp reply time: 15–30 mins (8am–10pm Sri Lanka time, UTC+5:30)</span>
+          </small>
+
+          <!-- Multilingual Concierge Photo Card -->
+          <div class="multilingual-concierge-card reveal">
+            <img class="concierge-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Multilingual Guest Support Concierge" loading="lazy" />
+            <div class="concierge-info">
+              <span class="concierge-badge" data-i18n="concierge_badge">🌍 6 Languages Supported</span>
+              <strong data-i18n="concierge_name">Clear Lanka Guest Concierge Team</strong>
+              <small data-i18n="concierge_desc">Fluent assistance in English, Tamil, Chinese, French, German &amp; Russian via WhatsApp.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-hub-card reveal">
+          <!-- Booking Mode Tabs -->
+          <div class="enquiry-tabs" role="tablist">
+            <button type="button" class="tab-link active" id="tab-btn-whatsapp" data-target="pane-whatsapp">
+              <span>💬</span> <span data-i18n="tab_wa_quote">Instant WhatsApp Booking</span>
+            </button>
+            <button type="button" class="tab-link" id="tab-btn-email" data-target="pane-email">
+              <span>✉️</span> <span data-i18n="tab_email_quote">Email Custom Itinerary</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Instant WhatsApp Pre-filler -->
+          <div class="tab-pane active" id="pane-whatsapp">
+            <form id="whatsapp-quick-form" class="enquiry-form">
+              <div class="form-row">
+                <label>
+                  <span data-i18n="form_name">Your Name:</span>
+                  <input required id="wa-name" placeholder="e.g. Maya" autocomplete="name" />
+                </label>
+                <label>
+                  <span data-i18n="form_dates">Travel Dates / Arrival:</span>
+                  <input id="wa-dates" placeholder="e.g. 15 March – 25 March" />
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  <span data-i18n="form_travellers">Number of Travellers:</span>
+                  <select id="wa-travellers">
+                    <option value="1 traveller">1 Solo Traveller</option>
+                    <option value="2 travellers" selected>2 Travellers (Couple / Friends)</option>
+                    <option value="3-4 travellers">3–4 Travellers (Small Family)</option>
+                    <option value="5+ travellers">5+ Travellers (Group)</option>
+                  </select>
+                </label>
+                <label>
+                  <span data-i18n="form_service">Main Service Needed:</span>
+                  <select id="wa-service">
+                    <option value="Airport Pickup">Airport Pickup / Transfer</option>
+                    <option value="Dedicated Chauffeur for Full Trip">Dedicated Driver & Car (Full Trip)</option>
+                    <option value="Curated Itinerary / Tour Package">Curated Tour Package</option>
+                    <option value="Single City Transfer">Single Transfer between Cities</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                <span data-i18n="form_notes">Route or Special Requirements:</span>
+                <textarea id="wa-notes" rows="3" placeholder="e.g. Airport to Galle, then Kandy and Ella. Need child seat."></textarea>
+              </label>
+
+              <button type="submit" class="button button-coral full-width">
+                <span>💬</span> <span data-i18n="btn_send_wa">Open & Send on WhatsApp ↗</span>
+              </button>
+              <small data-i18n="wa_instant_note">Opens directly on WhatsApp with your details formatted. No waiting!</small>
+            </form>
+          </div>
+
+          <!-- Tab 2: Email Form -->
+          <div class="tab-pane" id="pane-email">
+            <form class="enquiry-form" id="enquiry-form">
+              <div class="form-row">
+                <label>
+                  <span data-i18n="form_name">Your Name:</span>
+                  <input required name="name" autocomplete="name" placeholder="e.g. Maya" />
+                </label>
+                <label>
+                  <span data-i18n="form_email">Email Address:</span>
+                  <input required type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+                </label>
+              </div>
+              <div class="form-row">
+                <label>
+                  <span data-i18n="form_dates">Travel Dates:</span>
+                  <input name="dates" placeholder="e.g. 10–22 February" />
+                </label>
+                <label>
+                  <span data-i18n="form_travellers">Number of Travellers:</span>
+                  <select name="travellers">
+                    <option>1 traveller</option>
+                    <option selected>2 travellers</option>
+                    <option>3–4 travellers</option>
+                    <option>5+ travellers</option>
+                  </select>
+                </label>
+              </div>
+              <fieldset>
+                <legend data-i18n="form_help_legend">What can we help you with?</legend>
+                <div class="checks">
+                  <label><input type="checkbox" name="help" value="airport" checked /> Airport pickup</label>
+                  <label><input type="checkbox" name="help" value="driver" checked /> Private driver / taxi</label>
+                  <label><input type="checkbox" name="help" value="guide" /> Local guide</label>
+                  <label><input type="checkbox" name="help" value="route" /> Custom itinerary</label>
+                </div>
+              </fieldset>
+              <label>
+                <span data-i18n="form_message">Tell us a little about your trip:</span>
+                <textarea required name="message" rows="3" placeholder="Where would you like to go? What matters most to you?"></textarea>
+              </label>
+              <button class="button button-coral full-width" type="submit">
+                <span data-i18n="form_send_email">Send Email Enquiry <span>↗</span></span>
+              </button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+              <small data-i18n="form_privacy_note">We respect your privacy. Zero spam or unwanted marketing.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span>Clear Lanka <b>Travel</b></span>
+        </a>
+        <p data-i18n="footer_tagline">Transparent taxi fares, verified local chauffeurs, and scam-free Sri Lanka travel advice.</p>
+        <div class="footer-emergency-wrap">
+          <small data-i18n="footer_emer_title">Emergency Hotlines in Sri Lanka:</small>
+          <div class="footer-hotlines">
+            <a href="tel:1912">🚨 Tourist Police: 1912</a>
+            <a href="tel:1990">🚑 Ambulance: 1990</a>
+            <a href="tel:119">🚔 Police: 119</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <b>Explore</b>
+          <a href="#calculator" data-i18n="nav_calculator">Fare Calculator</a>
+          <a href="#itineraries" data-i18n="nav_itineraries">Tour Packages</a>
+          <a href="#destinations" data-i18n="nav_destinations">Destinations</a>
+          <a href="#services" data-i18n="nav_services">Services</a>
+        </div>
+        <div>
+          <b>Advice & Help</b>
+          <a href="#safety" data-i18n="nav_safety">Scam Avoidance Hub</a>
+          <a href="#partners" data-i18n="nav_partners">Verified Drivers</a>
+          <a href="customer.html" data-i18n="nav_login">Traveller Account</a>
+          <a href="admin.html">Owner Admin</a>
+        </div>
+        <div>
+          <b>Direct Contact</b>
+          <a data-whatsapp href="https://wa.me/94770000000" target="_blank" rel="noopener">WhatsApp Support</a>
+          <a data-email href="mailto:hello@clearlankatravel.com">hello@clearlankatravel.com</a>
+          <span class="location-badge">📍 Colombo, Sri Lanka</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Clear Lanka Travel. All rights reserved.</span>
+      <span>Made with pride & care in Sri Lanka <i>♥</i></span>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a class="floating-wa-btn" data-whatsapp href="https://wa.me/94770000000" target="_blank" rel="noopener" aria-label="Chat with Clear Lanka Travel on WhatsApp">
+    <span class="floating-wa-icon">💬</span>
+    <div class="floating-wa-text">
+      <b>Need quick travel help?</b>
+      <small>WhatsApp our local team</small>
+    </div>
+  </a>
+
+  <!-- Chat Popover for info -->
+  <button class="chat-button sr-only" type="button" aria-label="Open chat information"><span>◌</span></button>
+</body>
+</html>

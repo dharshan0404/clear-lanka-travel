@@ -1,0 +1,4 @@
+window.CLEAR_LANKA_SUPABASE={
+  url:'https://lxphogcqbxtfitutpaoo.supabase.co',
+  anonKey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx4cGhvZ2NxYnh0Zml0dXRwYW9vIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc3MzEwNTAsImV4cCI6MjEwMzMwNzA1MH0.K5sWkXkEfAyNKBoC2Q1rnZAmq6chhqx6-emz_bdccBI'
+};
